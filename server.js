@@ -25,6 +25,10 @@ app.post('/api/synthesize',
   SynthesizeController.synthesize
 );
 
+app.get('/api/ping', (req, res) => {
+  res.send('This is Monitor the server uptime');
+});
+
 // Error handling
 app.use(errorHandler);
 
