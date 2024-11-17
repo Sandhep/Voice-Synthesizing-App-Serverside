@@ -26,7 +26,7 @@ app.post('/api/synthesize',
 );
 
 app.get('/api/ping', (req, res) => {
-  res.send('This is Monitor the server uptime');
+  res.send('This is to Monitor the server uptime');
 });
 
 // Error handling
