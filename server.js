@@ -19,11 +19,11 @@ const app = express();
 app.use(cors(config.server.cors));
 app.use(express.json());
 
-// Routes
+//Routes
 app.post('/api/synthesize', 
   upload.single('file'), 
   SynthesizeController.synthesize
-);
+); 
 
 app.get('/api/ping', (req, res) => {
   res.send('This is to Monitor the server uptime');
